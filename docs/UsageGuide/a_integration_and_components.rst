@@ -446,13 +446,13 @@ The JSON for this call is provided below, and based on the Json schema of the `D
             "name": ""
         }],
         "ulimitMemlockSoft": "",
-        "ulimitMemlockHard": "",
+        "ulimitMemlockHard"f: "",
         "networkModeHost": "true",
         "privilege": "false",
         "publicComponet": true,
         "dockerExecutionUser":""
-    }]
-}
+        }]
+    }
 
 Deployment, Code and Documentation Availability
 ------------
@@ -460,6 +460,9 @@ Deployment, Code and Documentation Availability
 DEP-PIPE is currently split in four different repositories that are available in GitHub, and also uses MAESTRO that is hosted in UBITECH’s private registry.
 
 .. image:: assets/repoDEPpipe.png
+    :class: with-border
+    
+
 
 
 The main repository contains instructions for the DEP-PIPE setup (including MAESTRO tool setup instructions) in the main repository. 
@@ -507,10 +510,10 @@ A user loading the web interface of a tools is prompted to log in (unless they h
 
 Finally, from the user perspective, a common login and registration page has been created for the new users, as depicted in the following screens:
 
-|pic1| |pic2|
+|pic3| |pic4|
 
-.. |pic1| image:: assets/registration.png
+.. |pic3| image:: assets/registration.png
    :width: 49%
 
-.. |pic2| image:: assets/save.png
+.. |pic4| image:: assets/save.png
    :width: 49%
