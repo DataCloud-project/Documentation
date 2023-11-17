@@ -90,7 +90,9 @@ DEF-PIPE consists of two main sections, each serving a crucial role in the pipel
 
 1. **Step Designer:** Users have the capability to design individual pipeline steps, each customizable with specific parameters and details like name, category, requirements, and visual appearance. These steps will serve as the functional units in the overall data processing workflow. 
 To access the step designer, click on the icon on the top right side of the tool
+
   .. image:: assets/defPIPEstepDesigner.png
+
 
 2. **Workflow Designer:** The Workflow Designer is where you can create your data pipelines by connecting steps previously designed in the step designer. This visual part allows you to orchestrate the data flow by specifying how data moves from one step to another.
   .. image:: assets/workflowDesignerDEFpipe.png
@@ -135,7 +137,7 @@ Step 1: Designing Steps in the Step Designer
 
    * Locating Step Properties: Once the step (new template) appears on the screen, on the right-hand side, you can observe a panel named “Step Properties”.
 
-   * Configure Step Information: Under the “Information” tab within the “Step Properties” you can specify a name and category for your step. For instance, for the first step, we chose “1-retrieve” and save it under the category of desire (Figure 64).
+   * Configure Step Information: Under the “Information” tab within the “Step Properties” you can specify a name and category for your step. For instance, for the first step, we chose “1-retrieve” and save it under the category of desire.
 
   .. image:: assets/namingTheStepAndCategory.png
 
@@ -319,92 +321,89 @@ Adding Resources
 For finding resources that can be used for the deployment of the pipelines, user starts by providing requirements as shown in the example, and click on "Submit" to display the available resources in a table.
 
 
+.. image:: assets/rMarketDashboard.jpg
+
+By selecting the link on the resource name to open the DataCloud WP1 description with its current resources in a new tab, while by selecting one of the available resources and clicking "Create contract" a prompt will appear asking to ﬁll in the desired duration of the contract (we recommend at least an hour so that you have enough time to extend/interrupt the contract before it ﬁnishes).
+
+.. image:: assets/creatingTheContract.png
+     :align: center
+
+Once you click on "Create Contract", MetaMask notiﬁcations will pop up asking you to sign transactions.
+
+.. image:: assets/contractSignature.jpg
+     :align: center
+
+
+One last MetaMask notiﬁcation will pop up asking you to sign a contract with the selected resource. Contract creation could take some time but an alert eventually pops up notifying you of the creation of the contract with its ID (which you can ﬁnd in the "My Contracts" tab).
+
+.. image:: assets/contractCreatedAndResourcesAdded.jpg
+     :align: center
+
+
+Contracts Monitoring
+~~~~
+
+Click on "My Contracts" to display the contracts of the user (selected in MetaMask). You can check your contracts info here. Note that you can also click on the refresh button on the top right corner of the table.
+Select one of your contracts by clicking on the three vertical dots in the "Action" column and click on "extend", you should see a prompt appear asking you to ﬁll an extension duration. Once you click on "Extend Contract", you should see an alert pop up after some time conﬁrming the contract extension.
+
+.. image:: assets/listContracts.jpg
+     :align: center
+
+Select one of your contracts by clicking on the three vertical dots in the "Action" column and click on "interrupt", you should see a prompt appear asking you to conﬁrm the contract interruption. Once you click on "Interrupt Contract", you should see an alert pop up after some time conﬁrming the contract interruption.
 
 
 Pipeline Deployment & Management
 -------
 
-.. Here you can find instructions for the basic functionalities of Marketplace.
 
-.. In short, from the user perspective, the flow that we present below can be summarized as:
+Retrieving Pipeline
+~~~~~~
 
-.. 1. Go to the Marketplace, find the desired policy and download.
-.. 2. Go to the Policies section, then upload the download policy by selecting New Policy.
+For performing a deployment, DEP-PIPE is provided by DEF-PIPE a list of available pipelines of the user. If no pipelines are available (no deployable pipelines in DEF-PIPE for the user account) a message will be displayed. Users can visit DEF-PIPE and can create one pipeline or copy one of the available template pipelines available.
 
+.. image:: assets/userPipelinesPresentedInDEPpipe.png
 
-.. User can access the PUZZLE marketplace that is available in this `link <marketplace.puzzle-h2020.com>`_, in order an find new policy templates. 
-.. - In the Marketplace, the user among the categories of the available policy template can select the desired category and then download the desired policy template to use in the local Puzzle installation. 
+For performing the deployment, DEP-PIPE is provided by ADA-PIPE with the pipeline chunk to deploy in the specific resources selected by it.
 
+Configuring Pipeline Deployment
+~~~~~~~~
 
-.. .. image:: assets/marketplace.png
+Once the pipeline has been analysed and chunks have been created, we can view them in the dashboard.
 
-.. Registration Form
-.. ----------
+.. image:: assets/pipelineChunksProvidedByADApipeForDeployment.png
 
-.. - We have the ability to register to the platform:
+Users can view the pipeline steps of the pipeline and if they need to configure them prior to deployment.
 
+Deploy Pipeline
+~~~~~~~
 
-.. .. image:: assets/marketplace_register.png
+Once the pipeline is configured, user can proceed with the deployment.
 
+.. image:: assets/deployingApipeline.png
 
+A successful deployment is then presented in the user dashboard.
 
-.. Service Providers
-.. ----------
+.. image:: assets/pipelineDashboard.png
 
-.. Service providers can use the PUZZLE marketplace to upload and share PUZZLE policies that are offering protection. Service provider being able to:
+Menu options provided for viewing the graph, editing policies and un-deploy the pipeline.
 
+.. image:: assets/pipelineDeploymentmenu.png
 
-.. - See all services owned per category
+The pipeline graph and monitoring data are provided to the user.
 
+.. image:: assets/pipelineGraph.jpg
 
-.. .. image:: assets/service_provider_view.png
+Vulnerability Scanning
+~~~~~~~
 
+With DataCloud, data scientist and protect their pipeline deployments with multiple tools. In specific vulnerabilities scanning is available with a single click. The first step is to go to the dedicated page of DataCloud, view all containerized steps and select the option “Scan” to perform a new vulnerability scanning on the image. The process can take from few seconds to few minutes, depending on the complexity and the dependencies of the step. 
 
+.. image:: assets/selectingComponentsToScanVulnerabilities.png
 
-.. - Αdd metadata for a service 
+Once ready the user can press “View” to see the vulnerabilities of the specific step. Results are stored in the Runtime Dashboard database so they are easy and fast to retrieve by the DataCloud users.
 
+.. image:: assets/vulnerabilitiesScanningResult.png
 
-.. .. image:: assets/service_provider_add_service.png
+A very important part of the process for protecting the components is to view details about a vulnerability and understand the dangers and the mitigation actions that can be followed to fix the issue. For this purpose, we provide links to an online vulnerability database, in specific the Aquasec Vulnerability Database (avd.aquasec.com).
 
-
-.. - Upload a policy template (Templates and supporting files can be uploaded in the corresponding form)
-
-
-.. .. image:: assets/service_provider_upload_policy.png
-
-
-
-
-.. - Policy templates and all the files uploaded by third parties in the marketplace are assessed before becoming available for download by the marketplace users. 
-
-
-
-.. Service Consumers
-.. ----------
-
-.. - A registered user can see the Dashboard with available SECaaS, based on the four different conceptual categories, in ‘Risk Analysis Services’, ‘Analytics Services’, ‘Enforcement Services’ and ‘Trust Assurance Services’.
-
-
-.. .. image:: assets/marketplace_enduser_view.png
-
-
-.. - Optionally, the user configures the Marketplace in order to be able to access the private PUZZLE installation.
-
-
-.. .. image:: assets/marketplace_enduser_view_2.png
-
-
-.. - For each service a dedicated page is provided, as shown below. For this first release the user can download manually the template policy, while in future releases the template will be possible to be sent to the PUZZLE installation.
-
-
-.. .. image:: assets/marketplace_enforment_service.png
-
-
-.. - User then can download the policy, go back to the User Dashboard and upload the policy. Once the policy successfully uploaded, i.e a DoS attack policy, when such an incident occurs the user can see information about the incident in the Incidents Representation section of the User Dashboard.
-
-.. - Finally, the user can also directly communicate with the provider of the policy template or even add a service to favorites.
-
-
-.. .. image:: assets/marketplace_enduser_view_3.png
-
-
+.. image:: assets/presentationOfVulnerability.png
