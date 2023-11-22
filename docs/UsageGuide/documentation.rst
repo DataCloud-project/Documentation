@@ -57,17 +57,17 @@ All services are available for testing and are accessible through the toolbox la
 +========================+===================================================+=============================================+
 | Toolbox                | https://datacloud-toolbox.euprojects.net          | datacloud-toolbox.euprojects.net            |
 +------------------------+---------------------------------------------------+---------------------------------------------+
-| DIS-PIPE               | 192.168.3.144:9085                                | datacloud-dis.euprojects.net                |
+| DIS-PIPE               | https://195.231.61.196:7778/                      | datacloud-dis.euprojects.net                |
 +------------------------+---------------------------------------------------+---------------------------------------------+
-| SIM-PIPE               | (locally installed) https://195.231.61.196:7778/  | datacloud-sim.euprojects.net                |
+| SIM-PIPE               | (locally installed) https://simpipe.sct.sintef.no | datacloud-sim.euprojects.net                |
 +------------------------+---------------------------------------------------+---------------------------------------------+
-| DEF-PIPE               | https://datacloud-dis.euprojects.net/             | datacloud-def.euprojects.net                |
+| DEF-PIPE               | https://crowdserv.sys.kth.se                      | datacloud-def.euprojects.net                |
 +------------------------+---------------------------------------------------+---------------------------------------------+
-| ADA-PIPE               | Locally installed (https://simpipe.sct.sintef.no) | datacloud-ada.euprojects.net                |
+| ADA-PIPE               | http://194.182.187.139                            | datacloud-ada.euprojects.net                |
 +------------------------+---------------------------------------------------+---------------------------------------------+
-| DEP-PIPE               | https://crowdserv.sys.kth.se                      | datacloud-dep.euprojects.net                |
+| DEP-PIPE               | 192.168.3.144:80                                  | datacloud-dep.euprojects.net                |
 +------------------------+---------------------------------------------------+---------------------------------------------+
-| R-MARKET               | http://194.182.187.139                            | datacloud-market.euprojects.net             |
+| R-MARKET               | http://20.71.159.181:10000                        | datacloud-market.euprojects.net             |
 +------------------------+---------------------------------------------------+---------------------------------------------+
 | Authentication service | https://datacloud-dep.euprojects.net/             | datacloud-auth.euprojects.net               |
 +------------------------+---------------------------------------------------+---------------------------------------------+
@@ -102,7 +102,7 @@ All services are available for testing and are accessible through the toolbox la
 
 
 .. ========
-.. Infrustructure Setup
+.. Infrastructure Setup
 .. ========
 
 .. - The first step for a user is to add her/his infrastructure. 
@@ -174,7 +174,7 @@ All services are available for testing and are accessible through the toolbox la
 
 .. * We fill up the fields on the form that displays:
 
-..   * **Name**, with a desired name for our applicatio.
+..   * **Name**, with a desired name for our application.
 ..   * **Cluster**, by selecting from a list of Clusters that we have created on the Infrastructures.
 ..   * And **Namespace**, by selecting from a list of Namespaces that are available in the Cluster that we select on the previous step.
  
@@ -235,7 +235,7 @@ All services are available for testing and are accessible through the toolbox la
 
 .. .. image:: assets/marketplace_vulnerabilities.png
 
-.. Inn the **Application** page the can be found the **Risk Analysis** button which leads to a page that contains the Risk Analysis for the application.
+.. In the **Application** page there can be found the **Risk Analysis** button which leads to a page that contains the Risk Analysis for the application.
 
 .. .. image:: assets/marketplace_risk_analysis.png
 
