@@ -3,20 +3,6 @@ Integrated Toolbox Documentation
 ###############################################################
 
 
-.. Here you can find instructions for the basic functionalities of PUZZLE Platform.
-
-.. .. raw:: html
-
-..    <iframe src="https://drive.google.com/file/d/1aYqlFOISyW4YeiBs_fdoqVgprXRpfWYo/preview" width="640" height="480" allow="autoplay"></iframe>
-
-
-
-.. In short, from the user perspective, the flow that we present below can be summarized as:
-
-.. 1. Go to the Marketplace, find the desired policy and download.
-.. 2. Go to the User Dashboard, and select the desired application.
-.. 3. Go to the Policies section, then upload the download policy by selecting New Policy.
-
 
 ========
 Development and Setup Instructions
