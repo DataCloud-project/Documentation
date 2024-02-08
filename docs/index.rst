@@ -26,8 +26,8 @@ Online Documentation Contents
 .. toctree::
    :maxdepth: 2
 
-
-   UsageGuide/a_integration_and_components
-
    UsageGuide/c_usage
+   UsageGuide/a_integration_and_components
+   UsageGuide/f_for_developers
+
 
