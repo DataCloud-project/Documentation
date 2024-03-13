@@ -6,9 +6,17 @@ How to use DataCloud
 Landing in the Toolbox
 =====
 
-The user can use the landing page of the toolbox to view an overview of the available tools.
+The datacloud toolbox landing page contains a short introduction along with a reference guide to the current documentation page.
 
-.. image:: assets/toolboxLanding.png
+.. image:: assets/toolboxLandingNew.png
+
+It also provides a brief overview of the project's tools along with external links.
+
+.. image:: assets/toolboxLandingOverviewTools.png
+
+The toolbox page can be used for centralized login to datacloud tools and new user registration. 
+
+.. image:: assets/toolboxRegister.png
 
 As for most tools Keycloak has been integrated, user should login with appropriate credentials in order to access tools such as DEF-PIPE and SIM-PIPE. 
 
@@ -259,11 +267,11 @@ Resource Management
 
 Regarding the execution and management of the pipeline at runtime, once the user logs in to the runtime dashboard that is provided by DEP-PIPE. This tool is actually the main point of interactions for both ADA-PIPE and R-MARKET.
 
-     .. image:: assets/landingPageOftheDEP_PIPEandRuntimeMng.jpg
+     .. image:: assets/designPipelinesRuntimeDashboardNew.jpg
 
 For the execution of the pipeline, an existing Kubernetes cluster must be provided.
 
-     .. image:: assets/utilizingResourcedFromRmarket.jpg
+     .. image:: assets/utilizingResourcedFromRmarketNew.jpg
 
 Utilizing Resources from R-MARKET
 -------
