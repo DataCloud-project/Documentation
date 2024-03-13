@@ -267,11 +267,11 @@ Resource Management
 
 Regarding the execution and management of the pipeline at runtime, once the user logs in to the runtime dashboard that is provided by DEP-PIPE. This tool is actually the main point of interactions for both ADA-PIPE and R-MARKET.
 
-     .. image:: assets/designPipelinesRuntimeDashboardNew.jpg
+     .. image:: assets/designPipelinesRuntimeDashboardNew.png
 
 For the execution of the pipeline, an existing Kubernetes cluster must be provided.
 
-     .. image:: assets/utilizingResourcedFromRmarketNew.jpg
+     .. image:: assets/utilizingResourcedFromRmarketNew.png
 
 Utilizing Resources from R-MARKET
 -------
