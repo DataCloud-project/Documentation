@@ -10,13 +10,9 @@ computing resources for managing Big Data pipelines on the Computing Continuum.
 
 DataCloud suggests a Big Data pipeline lifecycle consisting of discovery, definition, simulation, adaptation, provisioning, and deployment stages, and provides not only the six interoperable tools to support such a lifecycle but also an integrated DataCloud Toolbox.
 
-.. .. raw:: html
+.. raw:: html
    
-.. 	<iframe width="560" height="315" src="https://www.youtube.com/embed/smLbnl66TCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-
+ 	<iframe width="560" height="315" src="https://www.youtube.com/embed/WCdFLFCgfJ8" title="DataCloud Final Release" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
